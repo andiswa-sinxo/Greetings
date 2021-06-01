@@ -2,16 +2,18 @@ function greetingName(){
     var myCounter = 0
 
     function nameLanguage(name,language){
+        // var inputName = name,language
+
      name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-        if( language === "French"){
+        if( language === "french"){
             myCounter++;
             return 'Bonjour ' + name
         }
-        else if (language === "Tshivenda"){
+        else if (language === "tshivenda"){
             myCounter++;
             return 'Ndaa ' + name
         }
-        else if (language === "Spanish"){
+        else if (language === "spanish"){
             myCounter++;
             return 'Hola ' + name
         }
@@ -25,7 +27,7 @@ function greetingName(){
 
     function enterNumber(name){
         if(name === Number(name)){
-            return "Please enter a name"
+            return "Please enter a valid name"
         }
     }
 
