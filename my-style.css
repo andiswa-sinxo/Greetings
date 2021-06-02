@@ -30,3 +30,31 @@ h1{
 .align {
     display: flex;
 }
+
+.language{
+    margin-left: 700px;
+    
+}
+
+.buttons{
+    margin-left: 700px;
+    padding: 50px;
+    /* border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px; */
+    
+}
+
+.greetBtn{
+    width: 10%;
+    height: 40px;
+    
+    
+}
+
+.resetBtn{
+    width: 10%;
+    height: 40px;
+    
+    
+}
