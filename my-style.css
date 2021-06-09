@@ -30,8 +30,8 @@ h1{
 }
 
 .des{
-    margin-left: 680px;
-    font-size: 20px;
+    margin-left: 550px;
+    font-size: 25px;
     font-style: italic;
 }
 
@@ -59,6 +59,7 @@ h1{
     /* display: flex; */
     margin-left: 70px;
     padding-top: 50px;
+    font-size: 40px;
 }
 
 .align {
