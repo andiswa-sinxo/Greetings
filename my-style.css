@@ -55,7 +55,11 @@ h1{
     background-color: transparent;
 }
 
-.counter{
+.counted{
+    padding-top: 50px;
+}
+
+.counted label, span{
     /* display: flex; */
     margin-left: 70px;
     padding-top: 50px;

@@ -2,24 +2,26 @@ function greetingName(storedName) {
 
     var NameGreet = storedName || [];
 
-    function nameLanguage(name, language) {
+    function nameLanguage(names, language) {
 
-        name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-        if (!NameGreet.includes(name)) {
-            // myCounter++
-            NameGreet.push(name)
-        }
+        var string = names.toLowerCase();
+        var name = string.charAt(0).toUpperCase() + string.slice(1);
+
+       
         if (language === "french") {
             return 'Bonjour, ' + name
         }
-        else if (language === "tshivenda") {
+        if (language === "tshivenda") {
             return 'Ndaa, ' + name
         }
-        else if (language === "spanish") {
+        if (language === "spanish") {
             return 'Hola, ' + name
-        } else if (NameGreet.includes(name)) {
-            return "You have been greeted!";
-        }
+
+        } 
+        
+        // else if (NameGreet.includes(name)) {
+        //     return "You have been greeted!";
+        // }
     }
 
     function emptyText(name) {
@@ -34,14 +36,19 @@ function greetingName(storedName) {
         }
     }
 
-    function counterLocal() {
-        return myCounter
-    }
+    // function counterLocal() {
+    //     return myCounter
+    // }
 
-    function NameStoring(NameList) {
-        if (!NameGreet.includes(NameList)) {
+    function NameStoring(names) {
+
+        var string = names.toLowerCase();
+        var name = string.charAt(0).toUpperCase() + string.slice(1);
+
+
+        if (!NameGreet.includes(name)) {
             // myCounter++
-            NameGreet.push(NameList)
+            NameGreet.push(name)
             return
         } else {
             return "You have been greeted!"

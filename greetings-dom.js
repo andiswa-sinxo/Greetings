@@ -6,7 +6,7 @@ var counterElement = document.querySelector(".counter");
 var displayElement = document.querySelector(".display");
 
 
-var counterLocal = [];
+var counterLocal;
 
 if (localStorage["name"]) {
     counterLocal = JSON.parse(localStorage.getItem("name"))
@@ -14,17 +14,25 @@ if (localStorage["name"]) {
 
 var nameInst = greetingName(counterLocal)
 
+if(counterLocal){
+    counterElement.innerHTML = counterLocal.length;
+}
+
 function greet() {
     var checkedGreetBtn = document.querySelector("input[name='input']:checked");
 
+    var check = checkedGreetBtn.value
+    var input = inputNameElement.value
+
     if (checkedGreetBtn) {
-        var check = checkedGreetBtn.value
-        var input = inputNameElement.value
+        
         console.log(check, input)
         nameInst.NameStoring(input)
         displayElement.innerHTML = nameInst.nameLanguage(input, check);
-        counterElement.innerHTML = nameInst.lengthName()
+        
         localStorage.setItem('name', JSON.stringify(nameInst.getStoredName()))
+
+        counterElement.innerHTML = nameInst.lengthName();
 
     }
 
@@ -35,7 +43,7 @@ function refresh() {
     localStorage.clear()
     location.reload()
     displayElement.innerHTML = '';
-    counterElement.innerHTML = 0;
+    // counterElement.innerHTML = 0;
 
 }
 
