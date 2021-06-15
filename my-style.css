@@ -79,11 +79,19 @@ h1{
     margin-left: 400px;
     width: 50%;
     text-align: center;
+    cursor: pointer;
+}
+
+.language label{
+    margin: 50px;
+    cursor: pointer;
 }
 
 .buttons{
     margin-left: 700px;
     padding: 50px;
+    cursor: pointer;
+    
     
   
 }
@@ -91,16 +99,31 @@ h1{
 .greetBtn{
     width: 10%;
     height: 40px;
-    background-color: transparent;
-    
-    
-    
+    background-color: transparent;  
+    margin: 50px;
+}
+
+.greetBtn:hover{
+    cursor: pointer;
+    background-color: lavender;
+    color: black;
+    box-shadow:0 0 5px floralwhite, 0 0 10px floralwhite, 0 0 15px floralwhite;
+    font-size: 20px;
 }
 
 .resetBtn{
     width: 10%;
     height: 40px;
     background-color: transparent;
+    margin: 50px;
+}
+
+.resetBtn:hover{
+    cursor: pointer;
+    background-color: lavender;
+    color: black;
+    box-shadow:0 0 5px floralwhite, 0 0 10px floralwhite, 0 0 15px floralwhite;
+    font-size: 20px;
 }
 
 .display{
@@ -109,3 +132,22 @@ h1{
     font-style: italic;
 }
 
+.colorChange{
+    color: green;
+}
+
+.warningColor{
+    color: red;
+}
+
+.errorMsg{
+    font-size:20px;
+    padding-left: 800px;
+    
+}
+.storageMsg{
+    padding-left: 800px;
+    font-size: 25px;
+    font-style: italic;
+
+}

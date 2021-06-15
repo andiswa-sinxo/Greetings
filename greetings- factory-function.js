@@ -1,5 +1,7 @@
 function greetingName(storedName) {
 
+    const alpha = /^([A-Za-z])+$/g;;
+
     var NameGreet = storedName || [];
 
     function nameLanguage(names, language) {
@@ -19,26 +21,20 @@ function greetingName(storedName) {
 
         } 
         
-        // else if (NameGreet.includes(name)) {
-        //     return "You have been greeted!";
-        // }
     }
 
     function emptyText(name) {
         if (name === "") {
-            return "Please enter a name";
+            return "Please enter a name.";
         }
     }
 
     function enterNumber(name) {
-        if (name === Number(name)) {
-            return "Please enter a valid name"
-        }
+        
+            return "Please enter a valid name.";
     }
 
-    // function counterLocal() {
-    //     return myCounter
-    // }
+    
 
     function NameStoring(names) {
 
@@ -47,11 +43,8 @@ function greetingName(storedName) {
 
 
         if (!NameGreet.includes(name)) {
-            // myCounter++
             NameGreet.push(name)
             return
-        } else {
-            return "You have been greeted!"
         }
 
     }
@@ -68,7 +61,6 @@ function greetingName(storedName) {
         nameLanguage,
         emptyText,
         enterNumber,
-        counterLocal,
         NameStoring,
         lengthName,
         getStoredName
